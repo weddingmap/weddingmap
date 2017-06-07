@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="F6Y-EX-2ac">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6lk-Bi-yL7">
+            <objects>
+                <viewController id="UK8-mL-kqt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wDx-3U-nwy"/>
+                        <viewControllerLayoutGuide type="bottom" id="FBO-1Q-E6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LDl-1J-qte">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DMW-kO-v7p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L7g-ho-TmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3415.1999999999998" y="136.28185907046478"/>
+        </scene>
+        <!--通知-->
+        <scene sceneID="Reo-Kq-BcD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="F6Y-EX-2ac" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通知" image="bell-7" id="rWj-on-1j1"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8LI-3G-tnj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UK8-mL-kqt" kind="relationship" relationship="rootViewController" id="bGN-RS-U5q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfD-Ik-nhM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2476" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell-7" width="30" height="30"/>
+    </resources>
+</document>

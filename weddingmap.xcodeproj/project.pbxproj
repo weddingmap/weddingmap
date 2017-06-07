@@ -12,6 +12,10 @@
 		EC4B14681EE7ED6D0016147F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14661EE7ED6D0016147F /* Main.storyboard */; };
 		EC4B146A1EE7ED6D0016147F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14691EE7ED6D0016147F /* Assets.xcassets */; };
 		EC4B146D1EE7ED6D0016147F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B146B1EE7ED6D0016147F /* LaunchScreen.storyboard */; };
+		EC4B14761EE7EF640016147F /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14741EE7EF640016147F /* Search.storyboard */; };
+		EC4B14781EE7EF8C0016147F /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14771EE7EF8C0016147F /* Message.storyboard */; };
+		EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14791EE7EFCF0016147F /* Notifications.storyboard */; };
+		EC4B147D1EE7EFF20016147F /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B147C1EE7EFF20016147F /* People.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		EC4B14691EE7ED6D0016147F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC4B146C1EE7ED6D0016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC4B146E1EE7ED6D0016147F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4B14751EE7EF640016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Search.storyboard; sourceTree = "<group>"; };
+		EC4B14771EE7EF8C0016147F /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		EC4B147A1EE7EFCF0016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notifications.storyboard; sourceTree = "<group>"; };
+		EC4B147C1EE7EFF20016147F /* People.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				EC4B14621EE7ED6D0016147F /* AppDelegate.swift */,
 				EC4B14641EE7ED6D0016147F /* ViewController.swift */,
 				EC4B14661EE7ED6D0016147F /* Main.storyboard */,
+				EC4B147C1EE7EFF20016147F /* People.storyboard */,
+				EC4B14791EE7EFCF0016147F /* Notifications.storyboard */,
+				EC4B14771EE7EF8C0016147F /* Message.storyboard */,
+				EC4B14741EE7EF640016147F /* Search.storyboard */,
 				EC4B14691EE7ED6D0016147F /* Assets.xcassets */,
 				EC4B146B1EE7ED6D0016147F /* LaunchScreen.storyboard */,
 				EC4B146E1EE7ED6D0016147F /* Info.plist */,
@@ -125,6 +137,10 @@
 			files = (
 				EC4B146D1EE7ED6D0016147F /* LaunchScreen.storyboard in Resources */,
 				EC4B146A1EE7ED6D0016147F /* Assets.xcassets in Resources */,
+				EC4B14781EE7EF8C0016147F /* Message.storyboard in Resources */,
+				EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */,
+				EC4B14761EE7EF640016147F /* Search.storyboard in Resources */,
+				EC4B147D1EE7EFF20016147F /* People.storyboard in Resources */,
 				EC4B14681EE7ED6D0016147F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +174,22 @@
 				EC4B146C1EE7ED6D0016147F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4B14741EE7EF640016147F /* Search.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4B14751EE7EF640016147F /* Base */,
+			);
+			name = Search.storyboard;
+			sourceTree = "<group>";
+		};
+		EC4B14791EE7EFCF0016147F /* Notifications.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC4B147A1EE7EFCF0016147F /* Base */,
+			);
+			name = Notifications.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
