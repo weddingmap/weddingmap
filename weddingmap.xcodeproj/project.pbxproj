@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C49E7A686D5C6CE3AD8A2739 /* Pods_weddingmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4BB4868E736D00A4D7F078 /* Pods_weddingmap.framework */; };
 		EC4B14631EE7ED6D0016147F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B14621EE7ED6D0016147F /* AppDelegate.swift */; };
 		EC4B14651EE7ED6D0016147F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B14641EE7ED6D0016147F /* ViewController.swift */; };
 		EC4B14681EE7ED6D0016147F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14661EE7ED6D0016147F /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E7D4BDC1325E1B685CAA201 /* Pods-weddingmap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingmap.release.xcconfig"; path = "Pods/Target Support Files/Pods-weddingmap/Pods-weddingmap.release.xcconfig"; sourceTree = "<group>"; };
+		B32DAE345FCF869028653D5F /* Pods-weddingmap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weddingmap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-weddingmap/Pods-weddingmap.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4BB4868E736D00A4D7F078 /* Pods_weddingmap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_weddingmap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4B145F1EE7ED6D0016147F /* weddingmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weddingmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4B14621EE7ED6D0016147F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC4B14641EE7ED6D0016147F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49E7A686D5C6CE3AD8A2739 /* Pods_weddingmap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3D7C5D76765F0B350E22B3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB4BB4868E736D00A4D7F078 /* Pods_weddingmap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC4B14561EE7ED6D0016147F = {
 			isa = PBXGroup;
 			children = (
 				EC4B14611EE7ED6D0016147F /* weddingmap */,
 				EC4B14601EE7ED6D0016147F /* Products */,
+				FA778BB59494280E8D159E2C /* Pods */,
+				B3D7C5D76765F0B350E22B3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +91,15 @@
 			path = weddingmap;
 			sourceTree = "<group>";
 		};
+		FA778BB59494280E8D159E2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B32DAE345FCF869028653D5F /* Pods-weddingmap.debug.xcconfig */,
+				5E7D4BDC1325E1B685CAA201 /* Pods-weddingmap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC4B14711EE7ED6D0016147F /* Build configuration list for PBXNativeTarget "weddingmap" */;
 			buildPhases = (
+				1901524F5E973F363AFDDA4B /* [CP] Check Pods Manifest.lock */,
 				EC4B145B1EE7ED6D0016147F /* Sources */,
 				EC4B145C1EE7ED6D0016147F /* Frameworks */,
 				EC4B145D1EE7ED6D0016147F /* Resources */,
+				DC684F9E311532D7291E4FF5 /* [CP] Embed Pods Frameworks */,
+				6F1BDBCAF262B9179704899F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +173,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1901524F5E973F363AFDDA4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1BDBCAF262B9179704899F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weddingmap/Pods-weddingmap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC684F9E311532D7291E4FF5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-weddingmap/Pods-weddingmap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC4B145B1EE7ED6D0016147F /* Sources */ = {
@@ -290,6 +365,7 @@
 		};
 		EC4B14721EE7ED6D0016147F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32DAE345FCF869028653D5F /* Pods-weddingmap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weddingmap/Info.plist;
@@ -302,6 +378,7 @@
 		};
 		EC4B14731EE7ED6D0016147F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E7D4BDC1325E1B685CAA201 /* Pods-weddingmap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = weddingmap/Info.plist;
