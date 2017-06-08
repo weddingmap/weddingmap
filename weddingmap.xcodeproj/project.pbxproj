@@ -17,6 +17,7 @@
 		EC4B14781EE7EF8C0016147F /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14771EE7EF8C0016147F /* Message.storyboard */; };
 		EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14791EE7EFCF0016147F /* Notifications.storyboard */; };
 		EC4B147D1EE7EFF20016147F /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B147C1EE7EFF20016147F /* People.storyboard */; };
+		ECB2D4C11EE92F8A00BA63DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EC4B14771EE7EF8C0016147F /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		EC4B147A1EE7EFCF0016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notifications.storyboard; sourceTree = "<group>"; };
 		EC4B147C1EE7EFF20016147F /* People.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
+		ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				EC4B14691EE7ED6D0016147F /* Assets.xcassets */,
 				EC4B146B1EE7ED6D0016147F /* LaunchScreen.storyboard */,
 				EC4B146E1EE7ED6D0016147F /* Info.plist */,
+				ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */,
 			);
 			path = weddingmap;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4B146D1EE7ED6D0016147F /* LaunchScreen.storyboard in Resources */,
+				ECB2D4C11EE92F8A00BA63DF /* GoogleService-Info.plist in Resources */,
 				EC4B146A1EE7ED6D0016147F /* Assets.xcassets in Resources */,
 				EC4B14781EE7EF8C0016147F /* Message.storyboard in Resources */,
 				EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */,
@@ -408,6 +412,7 @@
 				EC4B14731EE7ED6D0016147F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
