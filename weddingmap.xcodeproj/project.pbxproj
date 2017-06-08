@@ -79,8 +79,8 @@
 		EC4B14611EE7ED6D0016147F /* weddingmap */ = {
 			isa = PBXGroup;
 			children = (
+				ECB2D4C21EE9304900BA63DF /* Controller */,
 				EC4B14621EE7ED6D0016147F /* AppDelegate.swift */,
-				EC4B14641EE7ED6D0016147F /* ViewController.swift */,
 				EC4B14661EE7ED6D0016147F /* Main.storyboard */,
 				EC4B147C1EE7EFF20016147F /* People.storyboard */,
 				EC4B14791EE7EFCF0016147F /* Notifications.storyboard */,
@@ -92,6 +92,14 @@
 				ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */,
 			);
 			path = weddingmap;
+			sourceTree = "<group>";
+		};
+		ECB2D4C21EE9304900BA63DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B14641EE7ED6D0016147F /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		FA778BB59494280E8D159E2C /* Pods */ = {
