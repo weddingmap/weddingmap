@@ -18,6 +18,8 @@
 		EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14791EE7EFCF0016147F /* Notifications.storyboard */; };
 		EC4B147D1EE7EFF20016147F /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B147C1EE7EFF20016147F /* People.storyboard */; };
 		ECB2D4C11EE92F8A00BA63DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */; };
+		ECB2D4C41EEFD1AF00BA63DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */; };
+		ECC82E981EF0EA3A0071FE51 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EC4B147A1EE7EFCF0016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notifications.storyboard; sourceTree = "<group>"; };
 		EC4B147C1EE7EFF20016147F /* People.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
 		ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				EC4B14641EE7ED6D0016147F /* ViewController.swift */,
+				ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */,
+				ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -146,6 +152,7 @@
 				TargetAttributes = {
 					EC4B145E1EE7ED6D0016147F = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9XZ4ZTHMQT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -239,6 +246,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECB2D4C41EEFD1AF00BA63DF /* SignUpViewController.swift in Sources */,
+				ECC82E981EF0EA3A0071FE51 /* WelcomeViewController.swift in Sources */,
 				EC4B14651EE7ED6D0016147F /* ViewController.swift in Sources */,
 				EC4B14631EE7ED6D0016147F /* AppDelegate.swift in Sources */,
 			);
@@ -380,11 +389,14 @@
 			baseConfigurationReference = B32DAE345FCF869028653D5F /* Pods-weddingmap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XZ4ZTHMQT;
 				INFOPLIST_FILE = weddingmap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wedding.weddingmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -393,11 +405,14 @@
 			baseConfigurationReference = 5E7D4BDC1325E1B685CAA201 /* Pods-weddingmap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9XZ4ZTHMQT;
 				INFOPLIST_FILE = weddingmap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wedding.weddingmap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
