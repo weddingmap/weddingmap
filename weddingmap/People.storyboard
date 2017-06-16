@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zue-3G-YCr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Zue-3G-YCr">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,6 +34,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                 <state key="normal" title="使用Google帳號登入"/>
+                                <connections>
+                                    <action selector="googleLogin:" destination="xqz-RM-Atv" eventType="touchUpInside" id="knf-J2-AHW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWj-Ax-TRu">
                                 <rect key="frame" x="140" y="182" width="75" height="30"/>
@@ -47,6 +50,9 @@
                                 <rect key="frame" x="154" y="220" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="登入"/>
+                                <connections>
+                                    <segue destination="2Nr-3o-UAV" kind="show" id="bIk-90-mOC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,12 +61,117 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cS8-E4-JEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2470" y="811"/>
+            <point key="canvasLocation" x="7049" y="-208"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--個人-->
+        <scene sceneID="hp9-XI-f34">
+            <objects>
+                <viewController title="個人" id="e1n-bW-TCJ" customClass="ProfileViewController" customModule="weddingmap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mNH-RM-0e5"/>
+                        <viewControllerLayoutGuide type="bottom" id="dCF-Hh-5RG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ejg-h2-HJl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHA-FF-r33" customClass="fa">
+                                <rect key="frame" x="16" y="91" width="118" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8y-n9-bGs">
+                                <rect key="frame" x="142" y="160" width="160" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oya-9a-4e2">
+                                <rect key="frame" x="153" y="393" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登出"/>
+                                <connections>
+                                    <action selector="logoutButton:" destination="e1n-bW-TCJ" eventType="touchUpInside" id="M35-kx-ByY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NXp-kC-2tY"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="T8y-n9-bGs" id="YpX-eB-TuY"/>
+                        <outlet property="profieImageView" destination="fHA-FF-r33" id="dhr-KT-P1o"/>
+                        <segue destination="xqz-RM-Atv" kind="show" identifier="showLogin" id="B7X-NF-PXD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EBU-ei-D2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6092" y="272"/>
+        </scene>
+        <!--登入-->
+        <scene sceneID="R2T-h0-4gP">
+            <objects>
+                <viewController title="登入" id="2Nr-3o-UAV" customClass="LoginViewController" customModule="weddingmap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2WB-Yx-6cM"/>
+                        <viewControllerLayoutGuide type="bottom" id="VCe-EZ-y4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sgx-fr-FEn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cXX-Mw-QCC">
+                                <rect key="frame" x="100" y="97" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vI3-sv-n7I">
+                                <rect key="frame" x="100" y="152" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email帳號" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J42-zB-EGz">
+                                <rect key="frame" x="0.0" y="97" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密碼" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91n-Fc-n2K">
+                                <rect key="frame" x="0.0" y="161" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uds-cy-rbG">
+                                <rect key="frame" x="148" y="249" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="登入"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="2Nr-3o-UAV" eventType="touchUpInside" id="fMI-M7-qKf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="cXX-Mw-QCC" id="H8A-jO-5rT"/>
+                        <outlet property="passwordTextField" destination="vI3-sv-n7I" id="Gpk-Hm-k5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R0T-4G-Uhh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7162" y="653"/>
+        </scene>
+        <!--認證Email帳號-->
         <scene sceneID="I75-LC-NLC">
             <objects>
-                <viewController id="4Pj-QQ-D22" customClass="SignUpViewController" customModule="weddingmap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="認證Email帳號" id="4Pj-QQ-D22" customClass="SignUpViewController" customModule="weddingmap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CXH-4t-Maw"/>
                         <viewControllerLayoutGuide type="bottom" id="8RU-bU-Weq"/>
@@ -130,12 +241,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZH-Sj-Bc0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4382" y="304"/>
+            <point key="canvasLocation" x="7969" y="-208"/>
         </scene>
         <!--個人-->
         <scene sceneID="SgC-3c-b7F">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zue-3G-YCr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="PeopleViewController" automaticallyAdjustsScrollViewInsets="NO" id="Zue-3G-YCr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="個人" image="woman-man-7" id="U5p-gS-sM1"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -145,12 +256,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="xqz-RM-Atv" kind="relationship" relationship="rootViewController" id="n7b-Je-Orv"/>
+                        <segue destination="e1n-bW-TCJ" kind="relationship" relationship="rootViewController" id="scp-Sy-WaG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90H-S2-IBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="797"/>
+            <point key="canvasLocation" x="5372" y="328"/>
         </scene>
     </scenes>
     <resources>

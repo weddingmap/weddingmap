@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L4P-vY-Jty">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="L4P-vY-Jty">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1495" y="-350"/>
+            <point key="canvasLocation" x="2476" y="-635"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Wt9-n9-RWU">
@@ -48,7 +48,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5e1-3q-nhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="195"/>
+            <point key="canvasLocation" x="487" y="-680"/>
         </scene>
         <!--首頁-->
         <scene sceneID="cuv-Ib-1E4">
@@ -56,7 +56,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gxS-JL-wiv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首頁" image="home-7" id="YAL-Bp-SgW"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rEP-Ly-eww">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rEP-Ly-eww">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -67,7 +67,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc1-Cg-GNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="524" y="-344"/>
+            <point key="canvasLocation" x="1426" y="-679"/>
         </scene>
         <!--Search-->
         <scene sceneID="1gd-qH-Jhx">

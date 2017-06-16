@@ -17,6 +17,8 @@
 		EC4B14781EE7EF8C0016147F /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14771EE7EF8C0016147F /* Message.storyboard */; };
 		EC4B147B1EE7EFCF0016147F /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B14791EE7EFCF0016147F /* Notifications.storyboard */; };
 		EC4B147D1EE7EFF20016147F /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B147C1EE7EFF20016147F /* People.storyboard */; };
+		ECACBE411EF20E7A003ABDAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACBE401EF20E7A003ABDAB /* ProfileViewController.swift */; };
+		ECACBE451EF39AC0003ABDAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECACBE441EF39AC0003ABDAB /* LoginViewController.swift */; };
 		ECB2D4C11EE92F8A00BA63DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */; };
 		ECB2D4C41EEFD1AF00BA63DF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */; };
 		ECC82E981EF0EA3A0071FE51 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */; };
@@ -37,6 +39,8 @@
 		EC4B14771EE7EF8C0016147F /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
 		EC4B147A1EE7EFCF0016147F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notifications.storyboard; sourceTree = "<group>"; };
 		EC4B147C1EE7EFF20016147F /* People.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = People.storyboard; sourceTree = "<group>"; };
+		ECACBE401EF20E7A003ABDAB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
+		ECACBE441EF39AC0003ABDAB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ECB2D4C01EE92F8A00BA63DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -102,8 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				EC4B14641EE7ED6D0016147F /* ViewController.swift */,
+				ECACBE401EF20E7A003ABDAB /* ProfileViewController.swift */,
 				ECB2D4C31EEFD1AF00BA63DF /* SignUpViewController.swift */,
 				ECC82E971EF0EA3A0071FE51 /* WelcomeViewController.swift */,
+				ECACBE441EF39AC0003ABDAB /* LoginViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -246,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECACBE451EF39AC0003ABDAB /* LoginViewController.swift in Sources */,
 				ECB2D4C41EEFD1AF00BA63DF /* SignUpViewController.swift in Sources */,
 				ECC82E981EF0EA3A0071FE51 /* WelcomeViewController.swift in Sources */,
+				ECACBE411EF20E7A003ABDAB /* ProfileViewController.swift in Sources */,
 				EC4B14651EE7ED6D0016147F /* ViewController.swift in Sources */,
 				EC4B14631EE7ED6D0016147F /* AppDelegate.swift in Sources */,
 			);

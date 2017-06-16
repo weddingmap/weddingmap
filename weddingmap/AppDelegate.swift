@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FBSDKCoreKit
-
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,8 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Configure Facebook Login
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
-
-        return true
+        // 設置 Google 登入
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        
+            return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -52,12 +54,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
         
-        let handled = FBSDKApplicationDelegate.sharedInstance().application(app, open:
-            url, options: options)
+        var handled = false
+        
+        if url.absoluteString.contains("fb") {
+            handled = FBSDKApplicationDelegate.sharedInstance().application(app, open: url, options: options)
             
+        } else {
+            handled = GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: [:])
+        }
         
         return handled
     }
+    
 
 }
 
